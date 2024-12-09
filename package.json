@@ -1,0 +1,43 @@
+{
+	"name": "@flowr/ts-template",
+	"type": "module",
+	"version": "0.1.0",
+	"packageManager": "pnpm@9.14.4",
+	"engineStrict": true,
+	"author": "Pulseflow",
+	"license": "(LicenseRef-OQL-1.2 OR MIT OR Apache-2.0)",
+	"funding": "https://ko-fi.com/pauliesnug",
+	"homepage": "https://dyn.gay",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pulseflow/ts-template.git",
+		"directory": "/"
+	},
+	"bugs": "https://github.com/pulseflow/ts-template/issues",
+	"sideEffects": false,
+	"engines": {
+		"node": ">=20",
+		"pnpm": ">=9",
+		"npm": "pnpm",
+		"yarn": "pnpm"
+	},
+	"scripts": {
+		"build": "",
+		"lint": "pnpm eslint --cache .",
+		"lint:fix": "pnpm lint --fix",
+		"release": "pnpm bumpp -r"
+	},
+	"workspaces": {
+		"packages": [
+			"packages/*"
+		]
+	},
+	"devDependencies": {
+		"@flowr/eslint-config": "^4.4.1",
+		"@flowr/typescript": "^4.4.0",
+		"@types/node": "^22.10.1",
+		"bumpp": "^9.8.1",
+		"tsx": "^4.19.2",
+		"typescript": "^5.7.2"
+	}
+}
